@@ -104,7 +104,7 @@ fig4.update_geos(
     bgcolor='rgba(0,0,0,0)'
 )
 
-# 生成旋转帧（实现自动旋转的关键）
+# 生成旋转帧
 frames = [go.Frame(layout=dict(geo_projection_rotation=dict(lon=i, lat=20, roll=0))) for i in range(0, 360, 5)]
 fig4.frames = frames
 
